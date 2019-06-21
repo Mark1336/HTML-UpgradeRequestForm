@@ -1,0 +1,42 @@
+<html>
+
+<head>
+  <title>Upgrade Request</title>
+  <link rel="stylesheet" href="upgradeRequest.css">
+</head>
+
+<body>
+  <h2>Upgrade Request Form</h2>
+
+  <div>
+    <form action="/action_page.php">
+      <label for="fname">Custsomer First Name</label><br>
+      <input type="text" id="fname" name="firstname" placeholder="First name..">
+      <br>
+
+      <label for="lname">Customer Last Name</label><br>
+      <input type="text" id="lname" name="lastname" placeholder="Last name..">
+      <br>
+
+      <label for="subType">Subscription</label><br>
+      <select id="subType" name="subType">
+        <option value="proMonthly">Pro Monthly $$</option>
+        <option value="proPlusMonthly">Pro+ Monthly $$</option>
+        <option value="unlimited">Unlimited Monthly $$</option>
+        <option value="proAnnual">Pro Annual $$$</option>
+        <option value="proPlusAnnual">Pro+ Annual $$$</option>
+      </select>
+      <br>
+
+      <label for="cn">Area Code</label><br>
+      <input type="text" id="cn" name="custNum" placeholder="Area code(Ex: 760)">
+      <br>
+
+      <input type="hidden" name="recipients" value="jackATTmysite.com"/>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+</body>
+</html>
